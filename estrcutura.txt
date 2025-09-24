@@ -1,0 +1,36 @@
+conexion_vocacional/
+│── .htaccess
+│── index.php
+│── registro.php
+│── login.php
+│── logout.php
+│── admin/
+│   ├── .htaccess
+│   ├── index.php
+│   ├── estudiantes.php
+│   ├── programas.php
+│   ├── colegios.php
+│   └── reportes.php
+│── api/
+│   ├── get_programa.php
+│   └── auth.php
+│── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── admin.css
+│   ├── js/
+│   │   ├── main.js
+│   │   └── admin.js
+│   └── img/
+│       ├── logo-sena.png
+│       ├── programacion.jpg
+│       ├── diseno.jpg
+│       ├── electricidad.jpg
+│       ├── mecanica.jpg
+│       └── gastronomia.jpg
+│── config/
+│   ├── db.php
+│   └── session.php
+│── sql/
+│   └── conexion_vocacional.sql
+└── README.md
