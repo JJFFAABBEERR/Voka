@@ -1,0 +1,25 @@
+# Proteger el directorio admin
+AuthType Basic
+AuthName "Acceso Restringido"
+AuthUserFile /ruta/a/tu/.htpasswd
+Require valid-user
+
+# O alternativamente, usar sesiones PHP para protección
+# Descomentar las siguientes líneas y comentar las anteriores si se usa protección por sesión
+
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} -f
+# RewriteRule .* - [L]
+# RewriteCond %{REQUEST_FILENAME} -d
+# RewriteRule .* - [L]
+# RewriteRule .* ../login.php [L]
+
+# Prevenir acceso directo a archivos
+<Files "*.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+<Files "*.log">
+    Deny from all
+</Files>
